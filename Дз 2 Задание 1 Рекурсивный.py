@@ -11,11 +11,7 @@ def factorial(a):
         q=1/d
     except:
         print('Введенное значение не принадлежит множеству целых неотрицательных чисел')
-    if type(a)!=str:
-        try:
-            f=1/0
-        except:
-            print('Введенное значение не принадлежит множеству целых неотрицательных чисел')
+      
 class Test_Factorial(unittest.TestCase):
     def test_one(self):
         self.assertEqual(factorial(1),1)
