@@ -1,6 +1,4 @@
 import unittest
-import timeit
-a=900
 def factorial(a):
     if type(a)!=str:
         k=1
@@ -22,10 +20,6 @@ def factorial(a):
         except:
             print('Введенное значение не принадлежит множеству целых неотрицательных чисел')
         
-
-
-
-print(timeit.timeit("factorial(a)", setup="from __main__ import factorial,a", number=1))
 class Test_Factorial(unittest.TestCase):
     def test_one(self):
         self.assertEqual(factorial(1),1)
