@@ -5,7 +5,7 @@ from unittest import TestCase, main
 
 def line(m):
     lst=[]
-    for i in range(0,m+1):
+    for i in range(m+1):
         C=factorial(m)/(factorial(m-i)*factorial(i))
         C=int(C)
         lst.append(C)
@@ -18,7 +18,7 @@ def Pascal_trianngle(n):
         if n>-1 and type(n)==int:
             l=1
             result=[]
-            for i in range(0,n+1):
+            for i in range(n+1):
                 result.append(line(i))
             return result
     try:
