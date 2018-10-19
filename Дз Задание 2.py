@@ -2,14 +2,14 @@ from unittest import TestCase, main
 
 def perfect_numb(a):
     if type(a)!=str:
-        s=0
+        sum=0
         x=0
         if a>1 and type(a)==int:
             x=1
             for i in range (1,a//2+1):
                 if a%i==0:
-                    s=s+i
-            if a==s :
+                    sum=sum+i
+            if a==sum :
                 return True
             else:
                 return False
