@@ -48,7 +48,6 @@ for i in range(seconds):
             T3_1 = T3
             d = True
             a = False
-            t = 0
 if kol_periods != 0:
     print(kol_sec/kol_periods)
 else:
